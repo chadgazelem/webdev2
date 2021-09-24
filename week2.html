@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/week2.css">
+    <title>Week 2 Notes</title>
+</head>
+
+<body>
+
+    <head>
+        <h1>Notes 02</h1>
+    </head>
+    <main>
+        <div class="read-title">
+            <h2>Readings</h2>
+            <li>Ch2: Programming basics.</li>
+            <li>Ch3: Arrays, Logic, and Loops.</li>
+            <li>Ch4: Functions.</li>
+        </div>
+        <div class="pg-basic">
+            <p><b>Ch2: Programming basics.</b></p>
+        </div>
+        <div class="pg-content">
+            <p>Comments</p>
+            <ul>
+                <li>It makes it easier for
+                    anybody reading your code to understand what’s going on, and that includes you!</li> <br>
+                <img src="img2/comment.PNG" alt="comment">
+            </ul>
+            <p>Primitive Data Types</p>
+            <ul>
+                <li>JavaScript has seven different data types. Six of them are primitive data types</li> <br>
+                <img src="img2/primitive.PNG" alt="comment">
+            </ul>
+
+            <p>Variables</p>
+            <ul>
+                <li><b>const</b> is used when the variable will not be reassigned to another value, whereas </li>
+                <ul>
+                    <li>If you use const and it is non-primitive data like arrays, that value can be mutated.</li>
+                </ul>
+                <li><b>let</b> is used if the variable might be reassigned later in the program.</li> <br>
+
+            </ul>
+
+            <p>Local Scope and Global Scope</p>
+            <p>Local Scope </p>
+            <ul>
+                <li>Variables declared within a JavaScript function, become LOCAL to the function.
+                    They can only be accessed from within the function.</li> <br>
+                <img src="img2/local.PNG" alt="comment">
+            </ul>
+            <p>Global Scope </p>
+            <ul>
+                <li>A variable declared outside a function, becomes GLOBAL. All scripts and functions on a web page can
+                    access it</li> <br>
+                <img src="img2/global.PNG" alt="comment">
+            </ul>
+
+            <p>String Properties and Methods</p>
+            <ul>
+                <li> Properties are information about the object or value </li>
+                <li>Methods perform an action on the object or value ― either to change it or to tell us something about
+                    it.</li> <br>
+                <ul>
+                    <li>
+                        name.length
+                    </li>
+                    <li>
+                        name.toUpperCase();
+                        = 'ALEXA'
+                    </li>
+                    <li>name.toLowerCase();
+                        = 'alexa'</li>
+                    <li>
+                        concat () ='JavaScript'.concat('Ninja');
+                        = 'JavaScriptNinja' or 'Java' + 'Script' + ' ' + 'Ninja';
+
+                    </li>
+                </ul>
+            </ul>
+            <p>Changing The Value of Variables </p>
+            <ul>
+                <li>if let points = 0; <br>
+                    points = points + 10; = 10
+
+                </li> <br>
+                <img src="img2/values.PNG" alt="comment">
+            </ul>
+
+            <p>Logical Operators </p>
+            <ul>
+                <li>
+                    && (Logical AND)
+                    <ul>
+                        <li>All condition must be true</li>
+                        <li>Only evaluates to true if all the operands are truthy.</li>
+                    </ul>
+                </li> <br>
+                <li>
+                    || (Logical OR)
+                    <ul>
+                        <li>At least one of the condition is true</li>
+                        <li>evaluates to true if any of the operands are true, so it only evaluates to false if both
+                            operands
+                            are falsy.</li>
+                    </ul>
+                </li>
+            </ul>
+            <br>
+            <br>
+            <div class="array-basic">
+                <p><b>Ch3: Arrays, Logic, and Loops.</b></p>
+            </div>
+            <div class="array-content">
+
+                <p>Arrays</p>
+                <ul>
+                    <li>An array is an ordered list of values. To create an array literal, simply write a pair
+                        of square brackets
+                    </li>
+                    <li>it’s preferable to stick to using
+                        array literals because of a variety of reasons1 ... and they require less typing!
+                    </li> <br>
+                    <img src="img2/array.png" alt="comment">
+                </ul>
+                <p>Creating Array Literals</p>
+                <img src="img2/array2.PNG" alt="array literal">
+
+                <p>Array Properties and Methods</p>
+                <li>const avengers = ['Captain America', 'Iron Man', 'Thor', 'Hulk', 'Hawkeye', 'Black Widow'];</li>
+                </ul>
+
+                <img src="img2/array3.PNG" alt="array literal">
+
+
+                <p>Pop, Push, Shift, and Unshift</p>
+                <p>Pop method</p>
+                <ul>
+                    <li>To remove the last item from an array, we can use the pop() method:</li>
+                    <li>avengers.pop();</li>
+                    <li>Thor is being removed in the array</li>
+                    <li>avengers = ['Captain America', 'Iron Man', 'Thor']</li>
+                    <img src="img2/pop.PNG" alt="Pop method">
+                </ul>
+                <p>Shift Method</p>
+                <ul>
+                    <li>shift() method works in a similar way to the pop() method, but this
+                        removes the first item in the array:</li>
+                    <li>avengers.shift(); = 'Captain America'</li>
+                </ul>
+                <p>Push method</p>
+                <ul>
+                    <li>The push() method appends a new value to the end of the array.</li>
+
+                </ul>
+                <p>Unshift Method</p>
+                <ul>
+                    <li>The unshift() method is similar to the push() method, but this appends a new
+                        item to the beginning of the array</li>
+                </ul>
+                <br>
+                <p>The join() Method</p>
+                <ul>
+                    <li>The join() method can be used to turn the array into a string that comprises all
+                        the items in the array, separated by commas</li>
+                        <li>Extract parts of a string</li>
+                    <img src="img2/join.PNG" alt="join">
+                </ul>
+
+                <p>Slicing and Splicing</p>
+                <p>Slicing</p>
+                <ul>
+                    <li>The slice() method creates a subarray; effectively chopping out a slice of an
+                        original array, starting at one position and finishing at another.</li>
+                    <li>avengers ['Captain America', 'Iron Man', 'Thor', 'Hulk', 'Hawkeye', 'Black Widow']</li>
+                    <img src="img2/slice.PNG" alt="slice method">
+                </ul>
+                
+                <p>Splice</p>
+                <ul>
+                    <li>The splice() method removes items from an array then inserts new items in
+                        their place.</li>
+                        <li>add elements to the array</li>
+                    <li>avengers ['Captain America', 'Iron Man', 'Thor', 'Hulk', 'Hawkeye', 'Black Widow']</li>
+                    <img src="img2/splice.PNG" alt="splice method">
+                </ul>
+
+                <p><b>Loops.</b></p>
+                <ul>
+                    <li>Loops will repeat a piece of code over and over again according to certain
+                        conditions.</li>
+                </ul>
+
+                <img src="img2/whileloop.PNG" alt="whileloop"> <br>
+                <img src="img2/forloop.PNG" alt="forloop">
+
+            </div>
+           
+        </div>
+     
+
+    </main>
+</body>
+
+</html>

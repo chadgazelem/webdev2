@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Spartan&family=Ubuntu&display=swap');
+
+
+body{
+    font-family: 'Spartan',sans-serif;
+}
+.read-title li{
+    padding-left: 20px;
+}
+.pg-basic{
+    padding-left: 50px;
+    padding-top: 20px;
+}
+
+.pg-content{
+    padding-left: 50px;
+}
+
+ img{
+    width: 40%;
+}
+p{
+   font-style: italic; 
+}
+.array-content{
+    padding-left: 50px;;
+}
