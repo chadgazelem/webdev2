@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/week3.css">
+    <title>Week 3 Notes</title>
+</head>
+
+<body>
+
+    <head>
+        <h1>Notes 03</h1>
+    </head>
+    <main>
+        <div class="read-title">
+            <h2>Readings</h2>
+
+        </div>
+        <div class="doin-stuff">
+            <p><b>Object,Document Object Model,Events </b></p>
+
+        </div>
+        <div class="content">
+            <p>Objects</p>
+            <ul>
+                <li>Object literal is a comma-separated list of name-value pairs wrapped in curly braces. Object
+                    literals encapsulate data, enclosing it in a tidy package. This minimizes the use of global
+                    variables which can cause problems when combining code.</li>
+
+                <img src="img3/object.PNG" alt="Object">
+            </ul>
+            <p>JSON</p>
+            <li>JavaScript Object Notation (JSON) is a standard text-based format for representing structured data based
+                on JavaScript object syntax. It is commonly used for transmitting data in web applications (e.g.,
+                sending some data from the server to the client, so it can be displayed on a web page, or vice versa).
+                You'll come across it quite often, so in this article we give you all you need to work with JSON using
+                JavaScript, including parsing JSON so you can access data within it, and creating JSON.</li>
+            <li>The object started with duoble quotation</li>
+            <img src="img3/json.PNG" alt="json">
+
+            <p>Mathematical Objects</p>
+            <ul>
+                <li>The <code>Math.abs()</code> method returns the absolute value of a number.</li>
+                <li>The <code>Math.ceil()</code> method will round a number up to the next integer.</li>
+                <li>The <code>Math.floor()</code> method will round a number down to the next integer.</li>
+                <li>The <code>Math.round()</code> method will round a number to the nearest integer.</li>
+                <li>The <code>Math.truc()</code> method will return the integer part of a number. (ES6)</li>
+                <li>The <code>Math.exp()</code> method will raise a number to the power of Euler's constant.</li>
+                <li>The <code>Math.pow()</code> method will raise any number to the power of another number.</li>
+                <li>The <code>Math.sqrt()</code> method returns the positive square root of a number.</li>
+                <li>The <code>Math.cbrt()</code> method returns the cube root of a number. (ES6)</li>
+                <li>The <code>Math.hypot()</code> method returns the square root of the sum of the squares of all its
+                    arguments. It can be used to calculate the hypotenuse of a right-angled triangle. (ES6)</li>
+                <li>The <code>Math.max()</code> method returns the maximum number from its arguments.</li>
+                <li>The <code>Math.min()</code> method returns the minimum number from the given arguments.</li>
+                <li>The <code>Math</code> object has the standard trigonometric functions. All angles are measured in
+                    radians for these functions.</li>
+                <li>The <code>Math.random()</code> method is used to create random numbers.</li>
+            </ul>
+        </div>
+
+        <p>Document OBject Model</p>
+        <ul>
+            <li>The DOM is an application programming interface</li>
+            <li>Use the DOM when we interact the webpages
+                <ul>
+                    <li>add content to a HTML document</li>
+                    <li>delete content from the HTML document</li>
+                    <li> change content on a HTML document </li>
+                </ul>
+            </li>
+        </ul>
+        <p><b>Getting An Element By Its ID</b></p>
+        <ul>
+            <li>The <b>getElementById()</b> method does exactly what it says on the tin. It returns a
+                reference to the element with a unique id attribute that is given as an argument.</li>
+            <li><b>getElementsByTagName()</b> will return a live node list of all the elements with the
+                tag name that is provided as an argument.</li>
+            <li><b>getElementsByClassName()</b> will return a live node list of all elements that have
+        </ul>
+
+        <p><b>Query Selector</b></p>
+        <ul>
+            <li>The <b>document.querySelector()</b> method allows you to use CSS notation to find
+                the first element in the document that matches a CSS selector provided as an
+                argument. If no elements match, it will return null.</li>
+
+            <li>The <b>document.querySelectorAll()</b> method also uses CSS notation but returns a
+                node list of all the elements in the document that match the CSS query selector. If
+                no elements match, it will return an empty node list.</li>
+        </ul>
+
+        <p><b>Creating an Element,Creating a Text Node, Appending</b></p>
+        <ul>
+            <li>document object has a <b>createElement()</b> method that takes a tag name as a
+                parameter and returns that element.</li>
+            <li><b>document.createTextNode()</b> method. It
+                takes a parameter, which is a string containing the text that goes in the node</li>
+            <li><b>appendChild()</b> method that will add another node
+                (given as an argument) as a child node. We want our newly created text node to
+                be a child node of the list element node.</li>
+        </ul>
+
+        <p><b>innerHTML</b></p>
+        <ul>
+            <li>The <b>innerHTML</b> element property was standardized as part of the HTML5,
+                although it was already supported by all the major browsers. It returns all the
+                child elements of an element as a string of HTML. If an element contains lots of
+                other elements, all the raw HTML is returned</li>
+        </ul>
+        <br>
+
+        <h2><b>Event Listeners</b></h2>
+        <ul>
+            <p>Syntax:addEventListener</p>
+            <li>click event</li>
+            <li>Mouse Events</li>
+            <li>Keyboard Events</li>
+            <li>Touch Events</li>
+        </ul>
+
+        <h2>Link for Examples: <a href="event.html"> EventListener Example</a></h2>
+
+        </div>
+
+    </main>
+</body>
+
+</html>
