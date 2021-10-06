@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang='en'>
+
+<head>
+    <meta charset='utf-8'>
+    <title>Hero Form</title>
+</head>
+
+<body>
+    <form id='hero'>
+        <label for='heroName'>Name:
+            <input type='text' id='heroName' name='heroName' autofocus placeholder='Your Super Hero Name' maxlength=32 required>
+        </label>
+        <!-- Password Input Field -->
+        <label for='realName'>Real Name:
+            <input type='password' name='realName' id='realName'></label>
+        
+
+        <!-- Checkbox -->
+        <p>Super Powers:</p>
+        <label for='flight'>Flight:
+            <input type='checkbox' id='flight' value='Flight' name='powers'>
+        </label>
+        <label for='strength'>Super Strength:
+            <input type='checkbox' id='strength' value='Strength' name='powers'>
+        </label>
+        <label for='speed'>Super Speed:
+            <input type='checkbox' id='speed' value='Super Speed' name='powers'>
+        </label>
+        <label for='energy'>Energy Blasts:
+            <input type='checkbox' id='energy' value='Energy Blasts' name='powers'>
+        </label>
+        <label for='telekinesis'>Telekinesis:
+            <input type='checkbox' id='telekinesis' ➥ value='Telekinesis' name='powers'>
+        </label>
+
+        <!-- Radio Button -->
+        <p>What type of hero are you?</p>
+        <label for='hero'>Hero:
+            <input type='radio' name='category' value='Hero' id='hero'>
+        </label>
+        <label for='villain'>Villain:
+            <input type='radio' name='category' value='Villain' id='villain'>
+        </label>
+        <label for='anti-hero'>Anti-Hero:
+            <input type='radio' name='category' value='Antihero' id='anti-hero'>
+        </label>
+        <br>
+        <!-- Selcet Dropdown -->
+        <label for='City'>Base of Operations:
+            <select name='city' id='city'>
+                <option value='' selected>Choose a City</option>
+                <option value='Metropolis'>Metropolis</option>
+                <option value='Gotham City'>Gotham City</option>
+                <option value='Keystone City'>KeystoneCity</option>
+                <option value='Coast City'>Coast City</option>
+                <option value='Star City'>Star City</option>
+            </select>
+        </label>
+
+        <!-- Text Field Area -->
+        <label for='origin'>Origin Story:
+            <textarea id='origin' name='origin' rows='20' cols='60'></textarea>
+        </label>
+        <br>
+        <br>
+        <br>
+        <button type='reset'>Reset</button>
+        <button type='submit'>Submit</button>
+
+        <script src='hero.js'></script>
+    </form>
+    <br>
+    <br>
+    <h2>Input Types</h2>
+    <h4>Text Input Fields</h4>
+    <label for='donation-amount'>Enter amount to donate:
+        <input type='text' id='donation-amount' name='donationAmount' value='0'>
+    </label>
+
+    <h4>Password Input Fields</h4>
+    <label for='realName'>Real Name:
+        <input type='password' name='realName' id='realName' placeholder="Try me"></label>
+    <h4>Checkbox Input Field</h4>
+    <p>Super Powers:</p>
+    <label for='flight'>Flight:
+        <input type='checkbox' id='flight' value='Flight' name='powers'>
+    </label>
+    <label for='strength'>Super Strength:
+        <input type='checkbox' id='strength' value='Strength' name='powers'>
+    </label>
+    <label for='speed'>Super Speed:
+        <input type='checkbox' id='speed' value='Super Speed' name='powers'>
+    </label>
+    <label for='energy'>Energy Blasts:
+        <input type='checkbox' id='energy' value='Energy Blasts' name='powers'>
+    </label>
+    <label for='telekinesis'>Telekinesis:
+        <input type='checkbox' id='telekinesis' ➥ value='Telekinesis' name='powers'>
+    </label>
+
+    <h4>Radio Button Input Field</h4>
+    <p>What type of hero are you?</p>
+    <label for='hero'>Hero:
+        <input type='radio' name='category' value='Hero' id='hero'>
+    </label>
+    <label for='villain'>Villain:
+        <input type='radio' name='category' value='Villain' id='villain'>
+    </label>
+    <label for='anti-hero'>Anti-Hero:
+        <input type='radio' name='category' value='Antihero' id='anti-hero'>
+    </label>
+
+    <h4>Input file</h4>
+    <label for="files">
+        <input type="file">
+    </label>
+    <h4>Select Dropdown</h4>
+    <label for='City'>Base of Operations:
+        <select name='city' id='city'>
+            <option value='' selected>Choose a City</option>
+            <option value='Metropolis'>Metropolis</option>
+            <option value='Gotham City'>Gotham City</option>
+            <option value='Keystone City'>KeystoneCity</option>
+            <option value='Coast City'>Coast City</option>
+            <option value='Star City'>Star City</option>
+        </select>
+    </label>
+    <script src='hero.js'></script>
+</body>
+
+</html>
