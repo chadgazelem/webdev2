@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="main.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="todo-container">
+
+        <div id="maintitle">
+            <h1>TODOS</h1>
+        </div>
+        <div class="todo-content">
+
+            <ul class="todo-items">
+            </ul>
+        </div>
+
+        <div class="footer-task">
+            <div id="task-All" class="filter activeFilter">All</div>
+            <div id="task-Active" class="filter">Active</div>
+            <div id="task-Completed" class="filter">Completed</div>
+            <div id="taskCount"><span id="taskCounter">0</span> tasks left</div>
+        </div>
+
+
+        <form class="todo-form">
+            <input type="text" name="newtask" class="todo-input" placeholder="Add Task...">
+            <button type="button" class="add-button" onclick="addItem()"><i class="fa fa-plus"></i></i></button>
+        </form>
+    </div>
+    <script src="main.js" type="module"></script>
+</body>
+
+</html>

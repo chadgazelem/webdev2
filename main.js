@@ -4,6 +4,9 @@ const links = [
   { label: 'Week 3 Notes', url: 'week3.html', },
   { label: 'Week 4 Notes', url: 'week4.html', },
   { label: 'Week 5 Notes', url: 'week5.html', },
+  { label: 'Week 6 Todo App', url: 'week6.html', },
+  { label: 'Week 7 Notes', url: 'week7.html', },
+  { label: 'Week 8 Notes', url: 'week8.html', },
 ];
 
 const ol = document.getElementById('assignments');      // whatever your OL tag ID is
