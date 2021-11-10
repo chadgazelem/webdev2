@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/week9.css">
+    <link rel='stylesheet' href='css/animation.css'>
+    <title>Week 9 Notes</title>
+</head>
+
+<h1>Week 9 Notes</h1>
+
+</header>
+<main>
+    <h3>The Browser Object Model</h3>
+    <p>
+        The Browser Object Model (or BOM for short) is a collection of properties and
+        methods that contain information about the browser and computer screen.
+    </p>
+
+    <ul>
+        <h3>Dialogs</h3>
+        <li>The <b>window.alert()</b> method will pause the execution of the program and display
+            a message in a dialog box.</li>
+        <p>
+            Click <button onclick="sendAlert()">HERE</button> to see an example.
+        </p>
+        <li>The<b>window.confirm()</b> method will stop the execution of the program and
+            display a confirmation dialog that shows the message provided as an argument,
+            and giving the options of OK or Cancel. It returns the boolean values of true if
+            the user clicks OK, and false if the user clicks Cancel</li>
+        <p>
+            Click <button onclick="sendConfirm()">HERE</button> to see an example.
+        </p>
+
+        <li>The<b>window.prompt()</b> method will stop the execution of the program. It displays
+            a dialog that shows a message provided as an argument, as well as an input field
+            that allows the user to enter text. This text is then returned as a string when the
+            user clicks OK. If the user clicks Cancel, null is returned</li>
+        <p>
+            Click <button onclick="sendPrompt()">HERE</button> to see an example.
+        </p>
+
+    </ul>
+    <h3>The Document Object</h3>
+
+    <ul>
+        <h4>Cookies</h4>
+        <p>Cookies are small files that are saved locally on a user’s computer.</p>
+        <p>This means that a browser does not remember anything from one request to
+            another. So every time a user visits a page, nothing about any previous visits is
+            remembered. Cookies can be used to sidestep this problem by storing information
+            that can then be retrieved between requests.</p>
+        <p>Cookies can be used for personalizing a user’s browsing experience, storing user
+            preferences, keeping track of user choices (such as a shopping cart),
+            authentication and tracking users.</p>
+
+        <h4>Timing Functions</h4>
+        <ul>
+            <li>
+                <p><b>setTimeout()</b>method accepts a callback to a function as its first
+                    parameter and a number of milliseconds as its second parameter. Try entering the
+                    following example into a console.</p>
+                <p>
+                    Click <button onclick="setTime()">HERE</button> to see an example.
+                </p>
+            </li>
+            <li>
+                <p><b>window.setInterval()</b>method works in a similar way to
+                    window.setTimeout(), except that it will repeatedly invoke the callback function
+                    after every given number of milliseconds.</p>
+                <p>
+                    Click <button onclick="chant()">HERE</button> to see an example in the console
+                </p>
+            </li>
+        </ul>
+        <h4>Animation</h4>
+        <p>
+            The setTimeout() and setInterval() methods can be used to animate elements
+            on a web page. As an example, let’s create a web page that shows a colored
+            square, and make it rotate.
+        </p>
+        <ul>
+            <div id='square'></div>
+        </ul>
+    </ul>
+
+    <h3>HTML5 APIs</h3>
+    <ul>
+        <p>HTML5 is the latest version of the Hypertext Markup Language used to create
+            web pages. The latest iteration is HTML 5.1, which finally became a W3C
+            recommendation in November 2016.</p>
+    </ul>
+
+
+
+
+    <script src="js/week9.js"></script>
+    <script src='js/animation.js'></script>
+    </body>
+
+</html>
