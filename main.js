@@ -8,6 +8,7 @@ const links = [
   { label: 'Week 7 Notes', url: 'week7.html', },
   { label: 'Week 8 Notes', url: 'week8.html', },
   { label: 'Week 9 Notes', url: 'week9.html', },
+  { label: 'Challenge Proposal', url: 'proposal.html', },
   { label: 'Week 10 Notes', url: 'week10.html', },
 ];
 

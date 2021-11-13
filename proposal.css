@@ -1,0 +1,21 @@
+body {
+    width: 80%;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h3 {
+    font-family: 'Days One', sans-serif;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+
+}
+.link  {
+    text-decoration: none;
+}
+img{
+width: 40%;  
+ 
+}
