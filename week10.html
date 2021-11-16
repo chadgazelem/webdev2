@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/week10.css">
+    <title>Week 10 Notes</title>
+</head>
+
+<h1>Week 10 Notes</h1>
+
+</header>
+<main>
+
+    <body>
+        <h3> Types of client-side validation</h3>
+        <ul>
+            <p><b>Built-in form validation</b> - uses HTML5 form validation features, which we've discussed in many
+                places
+                throughout this module. This validation generally doesn't require much JavaScript. Built-in form
+                validation
+                has better performance than JavaScript, but it is not as customizable as JavaScript validation.</p>
+
+            <p><b>JavaScript</b> - his validation is completely customizable, but you need to create it all (or use a
+                library).</p>
+        </ul>
+
+        <h4>Using built-in form validation</h4>
+        <ul>
+            <li><code>required:</code> Specifies whether a form field needs to be filled in before the form can be
+                submitted.</li>
+            <li><code>minlength and maxlength:</code> Specifies the minimum and maximum length of textual data (strings)
+            </li>
+            <li><code>min and max:</code> Specifies the minimum and maximum values of numerical input types</li>
+            <li><code>type</code>: Specifies whether the data needs to be a number, an email address, or some other
+                specific
+                preset type.</li>
+            <li><code>pattern:</code> Specifies a regular expression that defines a pattern the entered data needs to
+                follow.</li>
+        </ul>
+
+        <h3>Required Attribute</h3>
+
+        <form>
+            <label for="choose">Would you prefer a banana or a cherry?</label>
+            <input id="choose" name="i_like" required>
+            <button>Submit</button>
+        </form>
+
+        <h3>Pattern Attribute</h3>
+
+        <form>
+            <label for="choose">Would you prefer a banana or a cherry?</label>
+            <input id="choose" name="i_like" required pattern="[Bb]anana|[Cc]herry">
+            <button>Submit</button>
+            <p>* if it doesnt match the pattern a note pops up "Please match the requested format"</p>
+        </form>
+        <br>
+
+        <h3>Constraining the length of your entries / Constraining the values of your entries </h3>
+        <div>
+            <label for="choose">Would you prefer a banana or a cherry?</label>
+            <input type="text" id="choose" name="i_like" required minlength="6" maxlength="6">
+        </div>
+        <div>
+            <label for="number">How many would you like?</label>
+            <input type="number" id="number" name="amount" value="1" min="1" max="10">
+        </div>
+        <div>
+            <button>Submit</button>
+        </div>
+        <br>
+        <br>
+        <br>
+
+        <h3>Here's the Full example</h3>
+
+        <form>
+            <p>
+                <fieldset>
+                    <legend>Do you have a driver's license?<abbr title="This field is mandatory"
+                            aria-label="required">*</abbr></legend>
+                    <!-- While only one radio button in a same-named group can be selected at a time,
+                     and therefore only one radio button in a same-named group having the "required"
+                     attribute suffices in making a selection a requirement -->
+                    <input type="radio" required name="driver" id="r1" value="yes"><label for="r1">Yes</label>
+                    <input type="radio" required name="driver" id="r2" value="no"><label for="r2">No</label>
+                </fieldset>
+            </p>
+            <p>
+                <label for="n1">How old are you?</label>
+                <!-- The pattern attribute can act as a fallback for browsers which
+                   don't implement the number input type but support the pattern attribute.
+                   Please note that browsers that support the pattern attribute will make it
+                   fail silently when used with a number field.
+                   Its usage here acts only as a fallback -->
+                <input type="number" min="12" max="120" step="1" id="n1" name="age" pattern="\d+">
+            </p>
+            <p>
+                <label for="t1">What's your favorite fruit?<abbr title="This field is mandatory"
+                        aria-label="required">*</abbr></label>
+                <input type="text" id="t1" name="fruit" list="l1" required
+                    pattern="[Bb]anana|[Cc]herry|[Aa]pple|[Ss]trawberry|[Ll]emon|[Oo]range">
+                <datalist id="l1">
+                    <option>Banana</option>
+                    <option>Cherry</option>
+                    <option>Apple</option>
+                    <option>Strawberry</option>
+                    <option>Lemon</option>
+                    <option>Orange</option>
+                </datalist>
+            </p>
+            <p>
+                <label for="t2">What's your e-mail address?</label>
+                <input type="email" id="t2" name="email">
+            </p>
+            <p>
+                <label for="t3">Leave a short message</label>
+                <textarea id="t3" name="msg" maxlength="140" rows="5"></textarea>
+            </p>
+            <p>
+                <button>Submit</button>
+            </p>
+        </form>
+        <br>
+        <br>
+        <h3>Validating forms using JavaScript</h3>
+        <h4>Implementing a customized error message</h4>
+        <form>
+            <label for="mail">I would like you to provide me with an e-mail address:</label>
+            <input type="email" id="mail" name="mail">
+            <button>Submit</button>
+        </form>
+        <p><code>typeMismatch</code> checks if the input text is an email.</p>
+        <p><code>setCustomValidity</code> creates a custom message if the typeMismatch doesnt meet.</p>
+
+        <h4>More Complex example</h4>
+
+        <a href="complex.html"> A More Detailed Example</a>
+
+        <h4>Validating forms without a built-in API</h4>
+        <a href="complex1.html"> Click me For the Example</a>
+
+
+        <script src="FormVald/script.js"></script>
+    </body>
+    
+
+
+
+</html>

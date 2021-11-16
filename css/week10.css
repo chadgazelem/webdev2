@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Spartan&family=Ubuntu&display=swap');
+
+
+body{
+    font-family: 'Spartan',sans-serif;
+}
+.doin-stuff, .codes{
+    padding-left: 10px;
+    padding-top: 20px;
+}
+
+.content{
+    padding-left: 50px;
+}
+img{
+    width: 70%;
+}
+
+
+/* Required Attribute */
+input,#choose:invalid {
+    border: 2px dashed rgb(56, 32, 160);
+    box-shadow:none;
+}
+/* input:invalid:required {
+    background-image: linear-gradient(to right, pink, lightgreen);
+  } */
+input,#choose:valid {
+    border: 2px solid black;
+}
+
+
+/* Full Example */
+form {
+    font: 1em sans-serif;
+    max-width: 320px;
+  }
+  
+  p > label {
+    display: block;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  textarea,
+  fieldset {
+    width : 100%;
+    border: 1px solid #333;
+    box-sizing: border-box;
+  }
+  
+  input:invalid {
+    box-shadow: 0 0 5px 1px red;
+  }
+  
+  input:focus:invalid {
+    box-shadow: none;
+  }
